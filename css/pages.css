@@ -1,0 +1,32 @@
+/* Styles out of 'Style' page */
+
+
+/* Branding Page */
+
+/* Citation Page */
+section.citation {
+  padding: 2rem 0 1rem 0;
+  border-bottom: 1px solid #A4BE89;
+}
+  
+/* Product List Page */
+.product-list-wrapper {
+  margin: 0 auto;
+  /* There should be a left margin and a right margin that align the whole product list to the center*/
+  /* The problem is that: the width of the flex product list is not the actual width, but I don't know how to fix it. >_< */
+}
+
+
+/* checkout page */
+.checkout-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 1.5rem;
+}
+
+.checkout-wrapper section {
+  border: none;
+  flex: 1 1 2em;
+  padding-left: 2rem;
+}

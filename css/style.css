@@ -1,0 +1,617 @@
+/*
+  STYLE GUIDE 
+*/
+
+/* fonts */
+@font-face {
+  font-family:'Trirong';
+  font-weight: normal;
+  font-style: normal;
+  src:url(../fonts/Trirong-MediumItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Ysabeau;
+  font-weight: 300;
+  font-style: normal;
+  src:url(../fonts/Ysabeau-Light.ttf);
+}
+@font-face {
+  font-family:'Ysabeau';
+  font-weight: 600;
+  font-style: normal;
+  src:url(../fonts/Ysabeau-SemiBold.ttf);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 3rem 5rem;
+}
+
+body, button {
+  font-family: 'Ysabeau', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Trirong', serif;
+}
+
+section:not([id]) {
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #A4BE89;
+}
+
+section.first-section {
+  border-top: none;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* inline text */
+a.link-text {
+  color: #469732;
+  text-decoration: none;
+  padding: 0 0.2em 0.1em 0.2em;
+}
+
+a.link-text:hover, a.link-text:focus {
+  /* color:rgb(253, 253, 240); */
+  /* background-color:#63784c; */
+  /* color:#174d25; */
+  text-decoration: underline;
+}
+
+/* navigation link */
+a.link-nav {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 300;
+  background-color:#c1d9a7;
+  color: #385A41;
+  line-height: 3rem;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-out;
+  padding: 0 1rem;
+  border: solid 1px #c1d9a7;
+}
+
+a.link-nav:hover, a.link-nav:focus {
+  background-color: #f0f0d0;
+  border: solid 1px #8cc84c;
+  color:#6aa62a;
+  /* color:#c5e3b1; */
+  font-weight: 600;
+  font-size: 1.3rem;
+  transition: padding 0.3s ease-in;
+  transition: background-color 0.3s ease-out;
+  transition: font-size 0.3s ease-out;
+  /* border-left: solid 4px #385A41;  */
+}
+
+/* buttons */
+button {
+  margin-top: 1em;
+  margin-right: 1em;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 0.25em;
+  width: 6em;
+  height: 2.5em;
+  transition: all 0.3s ease-out;
+}
+
+button:hover, button:focus {
+  transition: all 0.3s ease-out;
+}
+
+/* reset button */
+.btn-reset {
+  background-color: #f5f5dc;
+  border: 1px solid #A4BE89;
+  color: #567a61;
+}
+
+.btn-reset:hover, .btn-reset:focus {
+  transform: translateY(-0.2em);
+  box-shadow: 0.5em 0.5em #A4BE89;
+  color: #728c57;
+}
+
+/* submit button */
+.btn-submit {
+  border: 1px solid #A4BE89;
+  background-color: #f5f5dc;
+  color:#567a61;
+}
+
+.btn-submit:hover, .btn-submit:focus {
+  transform: translateY(-0.2em);
+  box-shadow: 0.5em 0.5em #567a61;
+  border: 1px solid #567a61;
+  background-color: #ffffe0;
+  color: #567a61;
+}
+
+/* text input */
+.text-input-container {
+  padding: 0.5em 0;
+}
+
+input[type="text"]{
+  outline-style: none;
+  background-color: none;
+  border: 1px solid #A4BE89;
+  border-radius: 0.2em;
+  width: 15em;
+  height: 2.5em;
+  padding: 1em;
+}
+
+input[type="text"]:focus, input[type="text"]:hover {
+  background-color: #f5f5dc;
+  border: 1px solid #A4BE89;
+  border-radius: 0;
+  color:#385A41;
+}
+
+
+
+/* raida button input */
+.radio-label {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: #162e1c;
+  height: 2em;
+  line-height: 2em;
+  margin: 0.5em 0;
+  margin-right: 2em;
+}
+
+.radio-label:hover input{
+  border: 1.5px solid #385A41;
+  background-color: #f5f5dc;
+  transition:border 0.3s ease-in;
+}
+
+input[type="radio"]{
+  /* I think this is for canceling the style by chrome */
+  -webkit-appearance: none;
+}
+
+input[type="radio"]{
+  content:"\a0";
+  display:inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  border: 1px solid #385A41;
+  border-radius: 50%;
+  background-clip: content-box;
+  margin-right: 0.5em;
+}
+
+input[type="radio"]:checked{
+  background-color:#567a61;
+  padding: 0.2em;
+  color:#385A41;
+}
+
+
+/* image as a link */
+.img-link-container {
+  display: inline-block;
+  width: 200px;
+  border:none;
+}
+
+.img-link {
+  width: 100%;
+}
+
+.img-link-container:hover .img-link {
+  opacity: 0.7;
+  transition: opacity 0.3s ease-out;
+}
+
+/* 
+  ------------------- INTERACTIVE ELEMENTS 
+*/
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+h1 {
+  font-size: 4rem;
+  color:#9cbd7a;
+  transition: all 0.5s ease-out;
+}
+h1:hover  {
+  color:#385A41;
+  transition: all 0.5s ease-in-out;
+}
+
+h2{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color:#728c57;
+  transition: all 0.3s ease-out;
+}
+section:hover>h2{
+  color:#385A41;
+  transition: all 0.3s ease-in;
+}
+
+h3{
+  font-family: 'Ysabeau', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-left: solid 5px #beae72;
+  color:#152419;
+  padding-left: 1rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+h4 {
+  font-family: 'Ysabeau', sans-serif;
+  font-family: 'Trirong', serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color:#c2a629;
+}
+
+.paragraph {
+  font-size: 1rem;
+  padding-bottom: 1em;
+  width: 50em;
+  max-width:100%;
+  color:#2d2d2d;
+}
+
+/* Numbered Lists */
+ol {
+  font-size: 1em;
+  line-height: 2em;
+  color:#4b7a58;
+}
+ol li{
+  margin-left: 2em;
+  transition: all 0.3s ease-out;
+}
+ol li:hover{
+  color:#174d25;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: font-size 0.3s ease-out;
+}
+
+/* 
+  ------------------- TEXT ELEMENTS 
+*/
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+/* navigation */
+.nav {
+  border-bottom:2px solid #9cbd7a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+.box-item-nav {
+  flex: 1 1 2em;
+  flex-basis: auto;
+}
+
+.link-nav {
+  flex: 1 1 15em;
+  flex-basis: auto;
+}
+
+/* product listing */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 1.5rem;
+}
+
+.product-item {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items:flex-start;
+  width: 18rem;
+  padding: 1em 1em;
+  border: 1px solid #A4BE89;
+  text-decoration: none;
+  color:#385A41;
+  border-radius: 0.5em;
+  transition: all 0.3s ease-out;
+}
+
+.product-item:hover, .product-item:focus{
+  transform: translateY(-0.2em);
+  box-shadow: 0.4em 0.4em 0 0 rgba(88, 131, 46, 0.4);
+  border: 1px solid #385A41;
+  transition: all 0.3s ease-out;
+  background-color: #fff9ec;
+}
+
+.product-item img {
+  width: 100%;
+  border-radius: 1%;
+  padding:0;
+}
+
+.product-item-title{
+  padding: 0.5em 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  color:#152419;
+}
+
+.product-item-info {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-size: 0.8em;
+  color:#385A41;
+}
+
+.product-item-dot {
+  margin: 0 0.5em;
+  width: 0.3em;
+  height: 0.3em;
+  border-radius: 50%;
+  background-color: #4b7a58;
+  border: none;
+}
+
+.product-item-description {
+  font-size: 0.8em;
+  line-height: 1em;
+  color:darkgrey;
+  max-width: 16em;
+  margin: 0.5em 0 1em 0;
+  transition: all 0.2s;
+}
+
+.product-item:hover .product-item-description, .product-item:focus .product-item-description{
+  color:#2d2d2d;
+  transition: all 0.3s;
+}
+
+.product-item-row {
+  display: flex;
+  align-items:center;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.product-item-price {
+  font-weight: 600;
+}
+
+.product-item-cart {
+  /* margin: .5em 1em; */
+  margin: 0 1em 0.5em 0;
+  border: none;
+  font-size: 0.8em;
+}
+
+
+/* payment form */
+.payment-form {
+  width: 25em;
+  max-width: 100%;
+  border-bottom: 1px dashed #c5c5c4;
+  padding-bottom: 1.5em;
+}
+
+.payment-method {
+  padding: 1em 0;
+  border-top: 1px dashed #c5c5c4;
+  border-bottom: 1px dashed #c5c5c4;
+}
+
+.payment-card {
+  padding-top: 1em;
+}
+
+.payment-card h4{
+  padding-bottom: 0.5em;
+}
+
+.payment-btn {
+  color:#bf9d06; 
+  border: solid 1px #c2a629;
+  border-radius: 0.1em;
+}
+
+
+/* checkout cart */
+
+.checkout {
+  width: 30em;
+  max-width: 100%;
+}
+
+.checkout-item {
+  display: flex;
+  justify-content:space-between;
+  padding: 0.25em 0;
+  align-items: baseline;
+}
+
+.checkout-item-name {
+  flex: 3 1 2em;
+}
+
+.checkout-item-price {
+  flex: 1 1 2em;
+}
+
+input.checkout-number {
+  flex: 0 1;
+  outline-style: none;
+  background-color: none;
+  border-style: none;
+  border-bottom: 1px solid #A4BE89;
+  width: 4em;
+  height: 2em;
+  padding-left: 1em;
+}
+
+.checkout-number:focus, .checkout-number:hover {
+  background-color: #ffffea;
+  border-radius: 0;
+}
+
+.checkout-total {
+  margin-top: 1em;
+  padding: 1em 0;
+  border-top: 1px dashed #c5c5c4;
+  border-bottom: 1px dashed #c5c5c4;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.checkout-total span{
+  color:#174d25;
+}
+.checkout-total .btn-submit {
+  height: 2em;
+  border-radius: 0.1em;
+  margin-top: 0.25em;
+}
+
+/* 
+  ------------------- COMBINED ELEMENTS 
+*/
+
+
+
+/* 
+  Branding -------------------
+*/
+
+.font-trirong {
+  font-family: 'Trirong', serif;
+}
+h3 .font-trirong {
+  font-family: 'Trirong', serif;
+}
+
+.font-ysabeau-light {
+  font-family: 'Ysabeau', sans-serif;
+  font-weight: 300;
+}
+
+.font-ysabeau-bold {
+  font-family: 'Ysabeau', sans-serif;
+  font-weight: 600;
+}
+
+.colors {
+  display: flex;
+  flex-flow: row wrap;
+  color: white;
+}
+
+.colors div {
+  flex: 1 1 16em;
+  height: 8em;
+  padding-left: 2em;
+  padding-top: 1em;
+  margin: 0.3em 0.1em;
+  transition: all 0.3s ease-out;
+  border-radius: 0.2em;
+}
+
+.colors div:hover{
+  transform: translateY(-0.2em);
+  box-shadow: 0.4em 0.4em rgba(56,90,65, 0.5);
+  border: 1px solid #728c57;
+  transition: all 0.3s ease-out;
+}
+
+.color-block-1 {
+  background-color: #c1d9a7;
+  color: #385A41;
+}
+
+.color-block-2 {
+  color: #469732;
+}
+
+.color-block-button {
+  background-color:#f5f5dc;
+  color: #567a61;
+}
+
+.color-block-button-shadow {
+  background-color: #567a61;
+}
+
+.color-block-h1 {
+  background-color: #9cbd7a;
+}
+
+.color-block-h1h2 {
+  background-color: #385A41;
+}
+
+.color-block-h2 {
+  background-color:#728c57;
+}
+
+.color-block-h3 {
+  background-color: #152419;
+}
+
+.color-block-h4 {
+  background-color: #c2a629;
+}
+
+.color-block-ol {
+  background-color: #4b7a58;
+}
+
+.color-block-ol-hover {
+  background-color: #174d25;
+}
+
+.color-block-p {
+  color:#2d2d2d;
+}
+
+/* art direction */
+.art_direction img{
+  height: 35em;
+  width:auto;
+  max-height: 50vw;
+}
+
+/* 
+  ------------------- Branding 
+*/
