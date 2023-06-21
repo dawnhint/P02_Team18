@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Leafina_StyleGuide</title>
+
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/style_page.css" rel="stylesheet">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@1,500&family=Ysabeau:ital,wght@0,300;0,600;1,200&display=swap" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <h1>Leafina Style Guide</h1>
+
+    <nav class="nav">
+      <a href="./style.html" class="link-nav">Style</a>
+      <a href="./branding.html" class="link-nav">Branding</a>
+      <a href="./products.html" class="link-nav">Products</a>
+      <a href="" class="link-nav">Checkout</a>
+      <a href="./citation.html" class="link-nav">Citation</a>
+    </nav>
+
+    <div class="checkout-wrapper">
+      <section>
+        <h2>Checkout Cart</h2>
+        <div class="checkout">
+          <div class="checkout-item">
+            <span class="checkout-item-name">Product Name</span>
+            <span class="checkout-item-price">$20.00</span>
+            <input type="number" name="" id="" value="1" class="checkout-number">
+          </div>
+          <div class="checkout-item">
+            <span class="checkout-item-name">Cucumber Lemon Refresher</span>
+            <span class="checkout-item-price">$10.00</span>
+            <input type="number" name="" id="" value="3" class="checkout-number">
+          </div>
+          
+          <div class="checkout-total">
+            <h4>Total Amount:  <span> $50.00</span></h4>
+            <button type="submit" class="btn-submit">Checkout</button>
+          </div>
+        </div>
+      </section>
+  
+      <section>
+        <h2>Payment</h2>
+        <form class="payment-form">
+          <div class="payment-method">
+            <h4>Payment Method:</h4>
+            <div class="radio-label">
+              <input type="radio" name="payment-method" id="method-card" checked>
+              <label for="method-card" class="radio-label">
+                Credit Card
+              </label>
+            </div>
+            <div class="radio-label">
+              <input type="radio" name="payment-method" id="method-paypal" checked>
+              <label for="method-paypal" class="radio-label">
+                Paypal
+              </label>
+            </div>
+          </div>
+          
+          <div class="payment-card">
+            <h4>Card Information:</h4>
+            <div class="text-input-container">
+              <label for="cardholder">Cardholder Name:
+              </label>
+              <input type="text" id="cardholder" name="cardholder">
+            </div>
+            <div class="text-input-container">
+              <label for="cardnumber">Card Number:
+              </label>
+              <input type="text" id="cardnumber" name="cardnumber">
+            </div>
+            
+            <div class="text-input-container">
+              <label for="expiry">Expiration Date: </label>
+              <input type="text" id="expiry" name="expiry">
+            </div>
+  
+            <div class="text-input-container">
+              <label for="cvv">CVV: <input type="text" id="cvv" name="cvv"></label>
+            </div>
+          </div>
+  
+          <button type="submit" class="btn-submit payment-btn">Pay Now</button>
+        </form>
+        
+      </section>
+  
+
+    </div>
+
+
+  </body>
+</html>

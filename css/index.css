@@ -1,0 +1,28 @@
+
+/* Style of the index/homepage */
+/* Style shared (header area) */
+
+header {
+  position: sticky;
+  z-index: 10;
+  background-color:blanchedalmond;
+
+}
+
+.header-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color:#c1d9a7;
+}
+
+section {
+  border: dashed 1px #555555;
+  padding-left:5vw;
+  padding-right: 5vw;
+}
