@@ -3,6 +3,9 @@
 */
 
 /* fonts */
+*{
+  border:1px solid red;
+}
 @font-face {
   font-family:'Trirong';
   font-weight: normal;
@@ -308,7 +311,7 @@ ol li:hover{
 .nav {
   border-bottom:2px solid #9cbd7a;
   display: flex;
-  flex-wrap: wrap;
+  
   justify-content:space-between;
 }
 
@@ -611,3 +614,11 @@ h3 .font-trirong {
 /* 
   ------------------- Branding 
 */
+
+@media only screen and (max-width: 500px){
+  .nav {
+    flex-direction: column;
+    
+    
+  }
+}
