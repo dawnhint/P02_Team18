@@ -31,10 +31,10 @@ header {
 }
 
 @font-face {
-  font-family: 'iconfont';  /* Project id 4134698 */
-  src: url('//at.alicdn.com/t/c/font_4134698_gj7bbtuy8lk.woff2?t=1687496046458') format('woff2'),
-       url('//at.alicdn.com/t/c/font_4134698_gj7bbtuy8lk.woff?t=1687496046458') format('woff'),
-       url('//at.alicdn.com/t/c/font_4134698_gj7bbtuy8lk.ttf?t=1687496046458') format('truetype');
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.woff2?t=1687502727823') format('woff2'),
+       url('../fonts/iconfont.woff?t=1687502727823') format('woff'),
+       url('../fonts/iconfont.ttf?t=1687502727823') format('truetype');
 }
 
 .iconfont {
@@ -42,6 +42,9 @@ header {
   font-size: 1.2rem;
   color: #728c57;
   margin: auto 0.5rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .iconfont:hover {
@@ -78,6 +81,9 @@ footer .guarantee {
 
 footer .link-logo {
   color:#c1d9a7;
+}
+footer .link-logo:hover {
+  color: #728c57;
 }
 
 .additional-links a{
