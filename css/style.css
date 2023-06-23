@@ -3,9 +3,7 @@
 */
 
 /* fonts */
-*{
-  border:1px solid red;
-}
+
 @font-face {
   font-family:'Trirong';
   font-weight: normal;
@@ -154,7 +152,7 @@ input[type="text"]{
   background-color: none;
   border: 1px solid #A4BE89;
   border-radius: 0.2em;
-  width: 15em;
+  
   height: 2.5em;
   padding: 1em;
 }
@@ -419,8 +417,20 @@ ol li:hover{
 
 
 /* payment form */
+.checkout-wrapper{
+  display:flex;
+  gap:5rem;
+}
+.checkout{
+  padding:5rem;
+  flex:1;
+}
+.payment{
+  padding:5rem;
+  flex:1;
+}
 .payment-form {
-  width: 25em;
+  max-width: 25em;
   max-width: 100%;
   border-bottom: 1px dashed #c5c5c4;
   padding-bottom: 1.5em;
@@ -503,7 +513,12 @@ input.checkout-number {
   border-radius: 0.1em;
   margin-top: 0.25em;
 }
-
+label{
+display:flex;
+}
+input{
+  width:100%;
+}
 /* 
   ------------------- COMBINED ELEMENTS 
 */
@@ -614,11 +629,37 @@ h3 .font-trirong {
 /* 
   ------------------- Branding 
 */
-
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 1000px){
+  .checkout-wrapper{
+    display:flex;
+    gap:0;
+  }
+  .checkout{
+    padding:2rem;
+    flex:1;
+  }
+  .payment{
+    padding:2rem;
+    flex:1;
+  }
+}
+@media only screen and (max-width: 600px){
   .nav {
     flex-direction: column;
     
     
   }
+  .checkout-wrapper{
+    flex-direction: column;
+    gap:0;
+  }
+  .checkout{
+    padding:0.5rem;
+    flex:1;
+  }
+  .payment{
+    padding:0.5rem;
+    flex:1;
+  }
+  
 }
