@@ -2,6 +2,20 @@
 /* Style of the index/homepage */
 /* Style shared (header area) */
 
+.hero{
+  background-image: url("../img/product_moonlight.png");
+  max-width: 100%;
+  
+  padding:10rem;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  position:relative;
+}
+.hero h2{
+  font-size: 4rem;
+  color:white;
+}
 header {
   position: sticky;
   z-index: 10;
@@ -25,4 +39,27 @@ section {
   border: dashed 1px #555555;
   padding-left:5vw;
   padding-right: 5vw;
+}
+@media only screen and (max-width: 1000px){
+  .hero{
+    
+    
+    padding:5rem;
+   
+  }
+  .hero h2{
+    font-size: 3rem;
+    
+  }
+}
+@media only screen and (max-width: 500px){
+  .hero{
+    padding:0;
+    padding-top:3rem;
+    padding-bottom: 3rem;
+  }
+  .hero h2{
+    font-size: 2rem;
+    
+  }
 }

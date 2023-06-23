@@ -309,7 +309,7 @@ ol li:hover{
 .nav {
   border-bottom:2px solid #9cbd7a;
   display: flex;
-  
+  gap:2rem;
   justify-content:space-between;
 }
 
