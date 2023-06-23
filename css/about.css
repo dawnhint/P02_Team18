@@ -1,0 +1,57 @@
+.about{
+    display:flex;
+    gap:5rem;
+}
+.about_img{
+    
+    flex:1;
+    padding: 5rem;
+    
+}
+.about_img img{
+    max-width: 100%;
+}
+.information{
+    flex:1;
+    padding: 5rem;
+}
+
+@media only screen and (max-width: 1000px){
+    .about{
+        display:flex;
+        gap:0;
+    }
+    .about_img{
+        
+        flex:1;
+        padding: 2rem;
+        
+    }
+    .about_img img{
+        max-width: 100%;
+    }
+    .information{
+        flex:1;
+        padding: 2rem;
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    .about{
+        flex-direction: column;
+        gap:2rem;
+    }
+    .about_img{
+        
+        flex:1;
+        padding: 0.5rem;
+        
+    }
+    .about_img img{
+        max-width: 100%;
+    }
+    .information{
+        flex:1;
+        padding: 0.5rem;
+    }
+}
