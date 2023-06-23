@@ -8,6 +8,7 @@
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
@@ -33,13 +34,35 @@
       </div>   
     </header>
    
-    <section id="contact">
-      <section>
-        <h2>contact information</h2>
-      </section>
-      <section>
-        <h2>a form for the user to provide feedback</h2>
-      </section>
+    <section class="contact_page">
+      <div class="img">
+        <img src="img/tea1.jpg" alt="Contact image">
+      </div>
+      <div class="contact">
+      <div class="information">
+        <h2>Contact Information</h2>
+        
+          <p>Address: 1234 Univercity Road, Surry, Britsh Columbia, A1B2C3</p>
+          <p>Phone: 778-123-1234</p>
+          <p>Email: service@leafina.ca</p>
+        
+      </div>
+      <div class="feedback">
+        <h2>Feedback</h2>
+        <p>Your feedback is important for me!</p>
+        <label for="name">Your nickname:
+        </label>
+        <input type="text" id="name" name="name">
+        <label for="feedback">Your feedback:
+        </label>
+        <input type="text" id="feedback" name="feedback">
+        <label for="contact">Your contact information :
+        </label>
+        <input type="text" id="contact" name="contact">
+        <button type="submit" class="btn-submit payment-btn">Submit</button>
+        
+      </div>
+      </div>
     </section>
 
 
