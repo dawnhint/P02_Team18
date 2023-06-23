@@ -2,6 +2,106 @@
 /* Style of the index/homepage */
 /* Style shared (header area) */
 
+
+/* header */
+header {
+  position: sticky;
+  z-index: 10;
+}
+
+.header-top {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content:space-around;
+  background-color:antiquewhite;
+  background-color: white;
+  height: 2rem;
+}
+
+.link-logo {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #728c57;
+  transition: all 0.5s ease-in-out;
+}
+.link-logo:hover {
+  color: #385A41;
+  transition: all 0.5s ease-in-out;
+}
+
+@font-face {
+  font-family: 'iconfont';  /* Project id 4134698 */
+  src: url('//at.alicdn.com/t/c/font_4134698_gj7bbtuy8lk.woff2?t=1687496046458') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4134698_gj7bbtuy8lk.woff?t=1687496046458') format('woff'),
+       url('//at.alicdn.com/t/c/font_4134698_gj7bbtuy8lk.ttf?t=1687496046458') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 1.2rem;
+  color: #728c57;
+  margin: auto 0.5rem;
+}
+
+.iconfont:hover {
+  color: #385A41
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color:#c1d9a7;
+}
+
+
+section {
+  /* border: dashed 1px #555555; */
+  padding-left:5vw;
+  padding-right: 5vw;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #385A41;
+  color: white;
+  padding: 2rem 2rem 4rem 2rem;
+}
+
+footer .guarantee {
+  width: 40%;
+  max-width: 25rem;
+}
+
+footer .link-logo {
+  color:#c1d9a7;
+}
+
+.additional-links a{
+  color: white;
+  display: block;
+  margin: 0.25rem 0;
+}
+.additional-links a:hover {
+  color:#f5f5dc;
+}
+
+@media only screen and (max-width: 500px){
+  footer {
+    flex-direction: column;
+  }
+  footer div {
+    margin-top: 1rem;
+  }
+  footer .guarantee {
+    width: 100%;
+  }
+}
+
+/* hero */
 .hero{
   background-image: url("../img/product_moonlight.png");
   max-width: 100%;
@@ -16,42 +116,16 @@
   font-size: 4rem;
   color:white;
 }
-header {
-  position: sticky;
-  z-index: 10;
-  background-color:blanchedalmond;
 
-}
-
-.header-top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.header-nav {
-  display: flex;
-  justify-content: space-evenly;
-  background-color:#c1d9a7;
-}
-
-section {
-  border: dashed 1px #555555;
-  padding-left:5vw;
-  padding-right: 5vw;
-}
 @media only screen and (max-width: 1000px){
   .hero{
-    
-    
     padding:5rem;
-   
   }
   .hero h2{
     font-size: 3rem;
-    
   }
 }
+
 @media only screen and (max-width: 500px){
   .hero{
     padding:0;
@@ -60,6 +134,5 @@ section {
   }
   .hero h2{
     font-size: 2rem;
-    
   }
 }

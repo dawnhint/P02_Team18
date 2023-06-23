@@ -38,6 +38,10 @@ body, button {
   font-family: 'Ysabeau', sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
+
 h1, h2, h3 {
   font-family: 'Trirong', serif;
 }
@@ -64,9 +68,6 @@ a.link-text {
 }
 
 a.link-text:hover, a.link-text:focus {
-  /* color:rgb(253, 253, 240); */
-  /* background-color:#63784c; */
-  /* color:#174d25; */
   text-decoration: underline;
 }
 
@@ -80,7 +81,7 @@ a.link-nav {
   line-height: 3rem;
   font-size: 1.2rem;
   transition: all 0.2s ease-out;
-  padding: 0 2rem;
+  padding: 0 3.5rem;
   border: solid 1px #c1d9a7;
 }
 
@@ -88,13 +89,10 @@ a.link-nav:hover, a.link-nav:focus {
   background-color: #f0f0d0;
   border: solid 1px #8cc84c;
   color:#6aa62a;
-  /* color:#c5e3b1; */
   font-weight: 600;
   font-size: 1.3rem;
-  transition: padding 0.3s ease-in;
   transition: background-color 0.3s ease-out;
   transition: font-size 0.3s ease-out;
-  /* border-left: solid 4px #385A41;  */
 }
 
 /* buttons */
@@ -309,7 +307,7 @@ ol li:hover{
 .nav {
   border-bottom:2px solid #9cbd7a;
   display: flex;
-  gap:2rem;
+  flex-wrap: wrap;
   justify-content:space-between;
 }
 
@@ -331,11 +329,13 @@ ol li:hover{
 }
 
 .product-item {
+  flex: 1 1 15em;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items:flex-start;
-  width: 18rem;
+  width: 20vw;
+  min-width: 16rem;
   padding: 1em 1em;
   border: 1px solid #A4BE89;
   text-decoration: none;
@@ -643,12 +643,17 @@ h3 .font-trirong {
     flex:1;
   }
 }
+
 @media only screen and (max-width: 600px){
+
   .nav {
     flex-direction: column;
-    
-    
   }
+  .link-nav{
+    width: 100%;
+    text-align: center;
+  }
+  
   .checkout-wrapper{
     flex-direction: column;
     gap:0;
