@@ -4,6 +4,16 @@ body {
   padding: 3rem 5rem;
 }
 
+section:not([id]) {
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #A4BE89;
+}
+
+section.first-section {
+  border-top: none;
+}
+
 @media only screen and (max-width: 600px){
   body {
     padding: 2rem 1rem;
