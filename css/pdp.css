@@ -1,0 +1,118 @@
+
+#pdp {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.product-detail {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 1000px){
+    .product-detail {
+        padding-top: 2rem;
+    }
+    .pdp-detail-left {
+        align-self: flex-start;
+        position: sticky;
+        margin-top: 3rem;
+        top: 1rem;
+    }
+}
+
+.pdp-detail-left img {
+    width: 20rem;
+    max-width: 95vw;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.pdp-detail-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.pdp-detail-right .paragraph {
+    width: 28rem;
+    max-width: 90vw;
+}
+
+/* select */
+select, option {
+    background: none;
+    border: 1px solid #567a61;
+    color: #567a61;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0 1rem;
+
+    border-radius: 1.5rem;
+    width: 11rem;
+    height: 3rem;
+}
+
+select:focus, select:hover {
+    background-color: #f5f5dc;
+}
+
+input.checkout-number {
+    flex: 0 1;
+    border-bottom: 1px solid #A4BE89;
+    width: 4rem;
+    height: 2.5rem;
+    padding-left: 0;
+    text-align: center;
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+  
+.checkout-number:focus, .checkout-number:hover {
+    background-color: #f5f5dc;
+    border-radius: 0;
+}
+
+.btn-sign {
+    background: none;
+    border: 1px solid #567a61;
+    color: #567a61;
+    font-size: 1.2rem;
+    padding: auto;
+    margin: 0;
+
+    border-radius: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.btn-sign:hover, .btn-sign:focus {
+    background-color: #f5f5dc;
+}
+
+.count-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.count-row .btn-submit {
+    width: 10em;
+}
+
+.description{
+    margin-top: 1rem;
+}
+.description .paragraph {
+    font-size: 1rem;
+}
+
+.reviews {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #A4BE89;
+}

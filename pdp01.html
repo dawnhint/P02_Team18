@@ -4,10 +4,11 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Leafina_HOME</title>
+    <title>leafina</title>
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/pdp.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
@@ -36,8 +37,53 @@
       </div>   
     </header>
 
-    <section id="about">
-      <h2>Product Detailed page1</h2>
+    <section id="pdp">
+      <div class="path">
+        <a href="" class="link-text"">products</a> > loose tea > Ginger-Ginseng-Chamomile
+      </div>
+      <section class="product-detail">
+        <div class="pdp-detail-left">
+          <img src="./img/products/ginger-ginseng-chamomile.png" alt="ginger-ginseng-chamomile">
+        </div>
+        <div class="pdp-detail-right">
+          <h2>Ginger Ginseng Chamomile</h2>
+          <select name="weight" id="weight">
+            <option value="50g"> 50g CA$7.75</option>
+            <option value="100g">100g CA$14.45</option>
+            <option value="150g">150g CA$21.10</option>
+          </select>
+          <div class="count-row">
+            <div>            
+              <button class="btn-sign">-</button>
+              <input type="number" name="" id="" value="1" class="checkout-number">
+              <button class="btn-sign">+</button>
+            </div>
+            <button type="submit" class="btn-submit">Add to cart</button>
+          </div>
+          <div class="description">
+            <h4>Description :</h4>
+            <p class="paragraph">This herbal trio is a powerful mixture of three of the most popular wellness tisanes-blended in perfect harmony by our tea artisans. According to the Journal of Arthritis, ginger is more effective in reducing inflammation and pain in the body than over the counter pain medicine! Ginseng has shown to aid in mental alertness, improve concentration, and cognitive capabilities. To feel more focused, present, and clear minded. Honey-like chamomile takes the lead in this mellow tasting health-giving herbal blend, ginger gently follows. For a relaxing pure wellness blend, enjoy our Ginger Ginseng Chamomile with a touch of honey!</p>
+          </div>
+          <div class="material">
+            <h4>Ingredients :</h4>
+            <p class="paragraph">
+              Organic Ginger, Organic Ginseng, Organic Rosehips, Organic Chamomile, Organic Orange, Organic Mint
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <h2>Reviews</h2>
+        <div>
+          <div>five stars - - - - - </div>
+          <div>by Adrienn Edwards</div>
+          <div>February 2021</div>
+        </div>
+        <div>
+          <p class="paragraph">The first time I tried this tea it tasted a bit bitter but when I tried it again steeped really well.<br>
+            Lovely strong ginger flavor coming through alongside with the chamomile.</p>
+        </div>
+      </section>
     </section>
 
     <footer>
