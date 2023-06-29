@@ -4,10 +4,11 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Leafina_HOME</title>
+    <title>leafina</title>
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/pdp.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
@@ -42,8 +43,125 @@
       </div>   
     </header>
     
-    <section id="about">
-      <h2>Product Detailed page2</h2>
+    <section id="pdp">
+      <div class="path">
+        <a href="./products.html" class="link-text"">products</a> > loose tea > Cream-Earl-Grey-Moonlight
+      </div>
+      <section class="product-detail">
+        <div class="pdp-detail-left">
+          <img src="./img/products/cream-earl-grey-moonlight.png" alt="ginger-ginseng-chamomile">
+          <div class="pdp-img-row">
+            <a href="" class="img-link-container">
+              <img src="./img/products/cream-earl-grey-moonlight.png" alt="Cream Earl Grey Moonlight loose tea"
+              class="img-link">
+            </a>
+            <a href="" class="img-link-container">
+              <img src="./img/products/pdp/moonlight-packaging.jpg" alt="Cream Earl Grey Moonlight in packaging process"
+              class="img-link">
+            </a>
+            <a href="" class="img-link-container">
+              <img src="./img/products/pdp/moonlight-pack.jpg" alt="a pack of earl grey moonlight"
+              class="img-link">
+            </a>
+          </div>
+        </div>
+        <div class="pdp-detail-right">
+          <h2>Cream Earl Grey Moonlight</h2>
+          <select name="weight" id="weight">
+            <option value="50g"> 50g CA$9.15</option>
+            <option value="100g">100g CA$16.2</option>
+            <option value="150g">200g CA$29.58</option>
+            <option value="150g">400g CA$55.63</option>
+          </select>
+          <div class="count-row">
+            <div>            
+              <button class="btn-sign">-</button>
+              <input type="number" name="" id="" value="1" class="checkout-number">
+              <button class="btn-sign">+</button>
+            </div>
+            <button type="submit" class="btn-submit">Add to cart</button>
+          </div>
+          <div class="description">
+            <h4>Description :</h4>
+            <p class="paragraph">
+              Something special!<br>
+              <strong>
+                A premium blend of top quality ingredients directly sourced from traditional tea growers provide a heady and aromatic brew that is sure to put a smile on your face.
+              </strong>
+              <br>
+              Organic bio-dynamically farmed high-grown estate black tea from Sri Lanka provides the perfect base and body for a well-balanced and perfectly complementary blend of natural flavors and aromas. Organic oil of bergamot enhances the infusion of the tea, and is swirled and lifted seamlessly by the addition of light and delicate organic cornflowers and natural flavors. 
+              <br>Providing a distinctive citrussy body with just a hint of French vanilla on the finish, our Cream Earl Grey Moonlight offers a rich and robust Earl Grey experience, lightened and lifted by mellow cream and floral notes. Simply delicious!
+
+            </p>
+          </div>
+          <div class="material">
+            <h4>Ingredients :</h4>
+            <p class="paragraph">
+              Organic black loose leaf tea, cornflower, oil of bergamot, natural vanilla flavor
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <h2>Reviews</h2>
+        <div class="review-item">
+          <div class="stars">
+            <i class="iconfont star">&#xe671;</i>
+            <i class="iconfont star">&#xe671;</i>
+            <i class="iconfont star">&#xe671;</i>
+            <i class="iconfont star">&#xe671;</i>
+            <i class="iconfont star">&#xe671;</i>
+          </div>
+          <h4 class="review-user">by Kris</h4>
+          <div class="review-time">November 2021</div>
+          <div>
+            <p class="review-paragraph"> Absolutely delicious. It smells as good as it tastes. A keeper!!!</p>
+          </div>
+        </div>
+        <div class="review-item">
+          <div class="stars">
+            <i class="iconfont star">&#xe671;</i>
+            <i class="iconfont star">&#xe671;</i>
+            <i class="iconfont star">&#xe671;</i>
+            <i class="iconfont star">&#xe671;</i>
+            <i class="iconfont star">&#xe671;</i>
+          </div>
+          <h4 class="review-user">by Justine Wigham</h4>
+          <div class="review-time">October 2021</div>
+          <div>
+            <p class="review-paragraph">Delicious tea! Tastes like a London fog. Love it.</p>
+          </div>
+        </div>
+        <div class="review-item">
+          <div class="stars">
+            <i class="iconfont star">&#xe671;</i>
+            <i class="iconfont star">&#xe671;</i>
+            <i class="iconfont star">&#xe671;</i>
+            <i class="iconfont star">&#xe671;</i>
+            <i class="iconfont star">&#xe671;</i>
+          </div>
+          <h4 class="review-user">by John Cooper</h4>
+          <div class="review-time">September 2021</div>
+          <div>
+            <p class="review-paragraph">I’m not a fan of flavored tea usually but I thought Earl Grey with vanilla might be pretty good. I used a French press just to steep enough for one 12 oz cup. I was pleasantly surprised as the taste was good. I was worried as the color looked weak but I know this isn’t an indication of tea strength. <br>Anyway, this is a really nice tasting desert tea for my taste and preferences. No bad aftertaste at all, very smooth and aromatic. Try it, you might like it.
+            </p>
+          </div>
+        </div>
+        <div class="review-item">
+          <div class="stars">
+            <i class="iconfont star">&#xe671;</i>
+            <i class="iconfont star">&#xe671;</i>
+            <i class="iconfont star">&#xe671;</i>
+            <i class="iconfont star">&#xe671;</i>
+            <i class="iconfont star">&#xe671;</i>
+          </div>
+          <h4 class="review-user">by Ejh</h4>
+          <div class="review-time">November 2020</div>
+          <div>
+            <p class="review-paragraph">This is amazing tea! The taste and the aroma makes this tea my absolute favorite!</p>
+          </div>
+        </div>
+      </section>
     </section>
 
     <footer>
