@@ -1,7 +1,16 @@
+
 .about{
     display:flex;
     gap:5rem;
 }
+.title{
+    
+    padding:10rem;
+   background-size: 100%;
+    background-image: url("../img/p1.png");
+    background-repeat: no-repeat;
+}
+
 .about_img{
     
     flex:1;
