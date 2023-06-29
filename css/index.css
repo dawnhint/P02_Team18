@@ -4,6 +4,9 @@
 
 
 /* header */
+/* *{
+  border:1px solid red;
+} */
 header {
   position: sticky;
   z-index: 10;
@@ -17,6 +20,15 @@ header {
   background-color:antiquewhite;
   background-color: white;
   height: 2rem;
+}
+
+.header-top-1 {
+  flex: 1;
+}
+
+.header-top-2 {
+  flex: 1;
+  text-align: center;
 }
 
 .link-logo {
@@ -35,6 +47,11 @@ header {
   src: url('../fonts/iconfont.woff2?t=1687502727823') format('woff2'),
        url('../fonts/iconfont.woff?t=1687502727823') format('woff'),
        url('../fonts/iconfont.ttf?t=1687502727823') format('truetype');
+}
+
+.icons {
+  flex: 1;
+  text-align: center;
 }
 
 .iconfont {
@@ -79,6 +96,10 @@ footer .guarantee {
   max-width: 25rem;
 }
 
+footer .guarantee p {
+  font-size: 1rem;
+}
+
 footer .link-logo {
   color:#c1d9a7;
 }
@@ -89,7 +110,8 @@ footer .link-logo:hover {
 .additional-links a{
   color: white;
   display: block;
-  margin: 0.25rem 0;
+  margin: 0.2rem 0;
+  font-size: 1.1rem;
 }
 .additional-links a:hover {
   color:#f5f5dc;

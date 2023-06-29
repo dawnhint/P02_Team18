@@ -330,6 +330,7 @@ ol li:hover{
   align-items:flex-start;
   width: 20vw;
   min-width: 16rem;
+  max-width: 20rem;
   padding: 1em 1em;
   border: 1px solid #A4BE89;
   text-decoration: none;
