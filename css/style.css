@@ -459,6 +459,7 @@ ol li:hover{
   max-width: 100%;
 }
 
+
 .checkout-item {
   display: flex;
   justify-content:space-between;
@@ -496,9 +497,16 @@ input.checkout-number {
   border-top: 1px dashed #c5c5c4;
   border-bottom: 1px dashed #c5c5c4;
 
-  display: flex;
+  
   justify-content: space-between;
   align-items: baseline;
+}
+.checkout-total >div{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  
+  
 }
 .checkout-total span{
   color:#174d25;
