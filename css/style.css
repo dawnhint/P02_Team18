@@ -320,6 +320,7 @@ ol li:hover{
   display: flex;
   flex-wrap: wrap;
   gap: 2rem 1.5rem;
+  justify-content: center;
 }
 
 .product-item {
@@ -657,7 +658,7 @@ h3 .font-trirong {
     flex-direction: column;
   }
   .link-nav{
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
   }
   
@@ -673,5 +674,4 @@ h3 .font-trirong {
     padding:0.5rem;
     flex:1;
   }
-  
 }

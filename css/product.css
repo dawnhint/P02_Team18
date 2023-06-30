@@ -11,6 +11,7 @@
 
 .filter-section {
     padding: 0;
+    margin-bottom: 2rem;
 }
 
 .filter-list {
@@ -23,7 +24,7 @@
     background: none;
     border: 1px solid #567a61;
     color: #567a61;
-    font-size: 1em;
+    font-size: 1rem;
     margin: 0;
 
     border-radius: 1.25rem;
@@ -32,6 +33,28 @@
     width:auto;
     height: 2.5rem;
     font-weight:300;
+}
+
+@media only screen and (max-width: 700px){
+    .products h1{
+        font-size: 2rem;
+    }
+    .filter-section h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    .filter-list {
+        gap: 0.8rem 0.3rem;
+    }
+    .btn-filter {
+        font-size: 0.8rem;
+        height: 1.75rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .title-pick-your-tea {
+        display: none;
+    }
 }
   
 .btn-filter:hover, .btn-filter:focus {
