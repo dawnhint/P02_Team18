@@ -78,12 +78,12 @@
             <option value="150g">400g CA$55.63</option>
           </select>
           <div class="count-row">
-            <div>            
-              <button class="btn-sign">-</button>
-              <input type="number" name="" id="" value="1" class="checkout-number">
-              <button class="btn-sign">+</button>
+            <div class="count">            
+              <button id="minus-sign"class="btn-sign">-</button>
+              <input type="number" name="" id="count-num" value="1" class="checkout-number">
+              <button id="plus-sign" class="btn-sign">+</button>
             </div>
-            <button type="submit" class="btn-submit">Add to cart</button>
+            <button type="submit" class="btn-submit" id="pdp-submit">Add to cart</button>
           </div>
           <div class="description">
             <h4>Description :</h4>
@@ -185,6 +185,7 @@
     </footer>
 
     <script src="./js/main.js"></script>
+    <script src="./js/pdp.js"></script>
 
   </body>
 </html>

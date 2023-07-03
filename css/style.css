@@ -134,6 +134,13 @@ button:hover, button:focus {
   color: #567a61;
 }
 
+.btn-submit:active {
+    background-color: #8bc097;
+    color: white;
+    transition: background-color 0s;
+    transition: color 0s;
+}
+
 /* text input */
 .text-input-container {
   padding: 0.5em 0;
