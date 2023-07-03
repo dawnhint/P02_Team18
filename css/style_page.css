@@ -4,6 +4,10 @@ body {
   padding: 3rem 5rem;
 }
 
+.nav {
+  padding-top: 0.75rem;
+}
+
 section:not([id]) {
   margin-bottom: 2rem;
   padding-top: 2rem;

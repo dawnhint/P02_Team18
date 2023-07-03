@@ -135,7 +135,7 @@ button:hover, button:focus {
 }
 
 .btn-submit:active {
-    background-color: #8bc097;
+    background-color: #9fbda6;
     color: white;
     transition: background-color 0s;
     transition: color 0s;

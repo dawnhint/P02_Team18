@@ -102,12 +102,13 @@ select:focus, select:hover {
     background-color: #f5f5dc;
 }
 
+/* count and add-to-cart row*/
 input.checkout-number {
     flex: 0 1;
     border-bottom: 1px solid #A4BE89;
     width: 4rem;
     height: 2.5rem;
-    padding-left: 0;
+    padding-left: 0.5em;
     text-align: center;
     font-family: 'Ysabeau', sans-serif;
     font-size: 1.4rem;
@@ -165,6 +166,7 @@ input.checkout-number {
     height: 2.3em;
 }
 
+/* description */
 .description{
     margin-top: 1rem;
     padding-top: 1rem;
