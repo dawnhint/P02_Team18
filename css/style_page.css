@@ -35,15 +35,19 @@ section.citation {
 
 
 /* checkout page */
-.checkout-wrapper {
+/* .checkout-wrapper {
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem 1.5rem;
-}
+} */
 
 .checkout-wrapper section {
   border: none;
   flex: 1 1 2em;
-  padding-left: 2rem;
+  margin-bottom: 0;
+}
+
+.checkout-style{
+  padding: 0.5rem;
 }

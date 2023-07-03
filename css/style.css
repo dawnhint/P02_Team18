@@ -424,22 +424,31 @@ ol li:hover{
   display:flex;
   gap:5rem;
 }
+
 .checkout{
-  padding-top:5rem;
+  padding-top:3rem;
   padding-bottom: 5rem;
   padding-left: 5rem;
+  padding-right: 0;
   flex:1;
 }
+
 .payment{
-  padding-top:5rem;
+  padding-top:3rem;
   padding-bottom: 5rem;
   padding-right: 5rem;
+  padding-left: 0;
   flex:1;
 }
+
+.payment {
+  width: 30em;
+  max-width: 95%;
+}
+
 .payment-form {
   max-width: 25em;
   max-width: 100%;
-  border-bottom: 1px dashed #c5c5c4;
   padding-bottom: 1.5em;
 }
 
@@ -451,10 +460,22 @@ ol li:hover{
 
 .payment-card {
   padding-top: 1em;
+  border-bottom: 1px dashed #c5c5c4;
+  padding-bottom: 0.75em;
 }
 
 .payment-card h4{
   padding-bottom: 0.5em;
+}
+
+.cvv-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.cvv-row .text-input-container{
+  display: inline-block;
+  flex: 1 1;
 }
 
 .payment-btn {
@@ -468,15 +489,27 @@ ol li:hover{
 
 .checkout {
   width: 30em;
-  max-width: 100%;
+  max-width: 95%;
 }
 
+.checkout-items {
+  border-top: 1px dashed #c5c5c4;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 
 .checkout-item {
   display: flex;
   justify-content:space-between;
   padding: 0.25em 0;
   align-items: baseline;
+  color: #174d25;
+}
+
+.checkout-item:hover {
+  background-color: #fefadb;
+  color: #0d491d;
+  font-weight: 600;
 }
 
 .checkout-item-name {
@@ -490,25 +523,24 @@ ol li:hover{
 input.checkout-number {
   flex: 0 1;
   outline-style: none;
-  background-color: none;
+  background: none;
   border-style: none;
   border-bottom: 1px solid #A4BE89;
   width: 4em;
   height: 2em;
   padding-left: 1em;
+  color: #174d25;
 }
 
 .checkout-number:focus, .checkout-number:hover {
-  background-color: #ffffea;
+  background-color: #e8f2c2;
   border-radius: 0;
+  color: black;
 }
 
 .checkout-total {
-  margin-top: 1em;
   padding: 1em 0;
   border-top: 1px dashed #c5c5c4;
-  border-bottom: 1px dashed #c5c5c4;
-
   
   justify-content: space-between;
   align-items: baseline;
@@ -517,17 +549,27 @@ input.checkout-number {
   display:flex;
   justify-content: space-between;
   margin-top: 1em;
-  
-  
 }
+
 .checkout-total span{
   color:#174d25;
 }
+
 .checkout-total .btn-submit {
   height: 2em;
   border-radius: 0.1em;
   margin-top: 0.25em;
 }
+
+.checkout-total .total-row{
+  padding-top: 0.5em;
+  border-top: 1px dashed #c5c5c4;
+}
+
+.checkout-total .total-row h4{
+  color: #9c7522;
+}
+
 label{
 display:flex;
 }
@@ -672,13 +714,14 @@ h3 .font-trirong {
   .checkout-wrapper{
     flex-direction: column;
     gap:0;
+    align-items: center;
   }
   .checkout{
-    padding:0.5rem;
+    padding:1rem;
     flex:1;
   }
   .payment{
-    padding:0.5rem;
+    padding:1rem;
     flex:1;
   }
 }
