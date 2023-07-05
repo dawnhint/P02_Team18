@@ -20,6 +20,7 @@ header {
        url('../fonts/iconfont.ttf?t=1687502727823') format('truetype');
 }
 
+/* special icon font */
 .iconfont {
   font-family: "iconfont" !important;
   font-size: 1.2rem;

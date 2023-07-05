@@ -36,6 +36,11 @@
 .pdp-img-row .img-link-container img {
     width: 100%;
 }
+.img-link-container:hover .img-link {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-out;
+}
+
 
 /* right side of product details*/
 .pdp-detail-right {

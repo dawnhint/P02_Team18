@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
 
@@ -25,7 +25,7 @@
     </nav>
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
+    <div id="interactive_elements">
       <section class="first-section">
         <h2>In-text link</h2>
         <p>This is an <a href="#" class="link-text">in text link</a>.</p>
@@ -78,13 +78,13 @@
 
       </section>
 
-    </section>
+    </div>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
     <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-
+    <div id="text_elements">
+      
       <section>
         <h2>Headings</h2>
         <h1>H1 Header</h1>
@@ -107,13 +107,13 @@
         </ol>
       </section>
 
-    </section>
+    </div>
     <!-- // TEXT ELEMENTS SECTION -->
 
 
 
     <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
+    <div id="combined_elements">
 
       <section>
         <h2>Main Navigation</h2>
@@ -129,9 +129,12 @@
         <h2>Product Listing</h2>
 
         <div class="product-list">
-          <a class="product-item" href="#">
-            <img src="../img/products/product_cucumber.png" alt="loose Cucumber Lemon Refresher">
-            <div class="product-item-title">Cucumber Lemon Refresher</div>
+          <!-- Cucumber Lemon Refresher -->
+          <div class="product-item">
+            <a href="#" class="img-link-container">
+              <img src="../img/products/product_cucumber.png" alt="loose Cucumber Lemon Refresher" class="img-link">
+            </a>    
+            <a href="#" class="product-item-title">Cucumber Lemon Refresher</a>
             <div class="product-item-info">
               <span class="product-item-place">Canada</span>
               <div class="product-item-dot"></div>
@@ -143,10 +146,13 @@
               <p class="product-item-price">CA$7.04</p>
               <button type="submit" class="btn-submit product-item-cart">Add to cart</button>
             </div>
-          </a>
-          <a class="product-item" href="#">
-            <img src="../img/products/ginger-ginseng-chamomile.png" alt="loose Ginger Ginseng Chamomile">
-            <div class="product-item-title">Ginger Ginseng Chamomile</div>
+          </div>
+          <!-- ginger-ginseng-chamomile -->
+          <div class="product-item">
+            <a href="#" class="img-link-container">
+              <img src="../img/products/ginger-ginseng-chamomile.png" alt="loose Ginger Ginseng Chamomile" class="img-link">
+            </a>
+            <a href="#" class="product-item-title">Ginger Ginseng Chamomile</a>
             <div class="product-item-info">
               <span class="product-item-place">USA</span>
               <div class="product-item-dot"></div>
@@ -157,10 +163,17 @@
               <p class="product-item-price">CA$7.75</p>
               <button type="submit" class="btn-submit product-item-cart">Add to cart</button>
             </div>
-          </a>
-          <a class="product-item" href="#">
-            <img src="../img/products/cream-earl-grey-moonlight.png" alt="loose Cream Earl Grey Moonlight">
-            <div class="product-item-title">Cream Earl Grey Moonlight</div>
+          </div>
+          <!-- Cream Earl Grey Moonlight -->
+          <div class="product-item">
+            <a href="#" class="img-link-container">
+              <img src="../img/products/cream-earl-grey-moonlight.png" 
+              alt="loose Cream Earl Grey Moonlight" 
+              class="img-link">
+            </a>
+            <a href="#" class="product-item-title">
+              Cream Earl Grey Moonlight
+            </a>
             <div class="product-item-info">
               <span class="product-item-place">Sri Lanka</span>
               <div class="product-item-dot"></div>
@@ -172,10 +185,15 @@
               <p class="product-item-price">CA$9.15</p>
               <button type="submit" class="btn-submit product-item-cart">Add to cart</button>
             </div>
-          </a>
-          <a class="product-item" href="#">
-            <img src="../img/products/product_guarana.png" alt="Product image">
-            <div class="loose Guarana Energizer Chai">Guarana Energizer Chai</div>
+          </div>
+          <!-- Guarana Energizer Chai -->
+          <div class="product-item">
+            <a href="#" class="img-link-container">
+              <img src="../img/products/product_guarana.png" alt="loose Guarana Energizer Chai" class="img-link">
+            </a>
+            <a href="#" class="product-item-title">
+              Guarana Energizer Chai
+            </a>
             <div class="product-item-info">
               <span class="product-item-place">Canada</span>
               <div class="product-item-dot"></div>
@@ -186,7 +204,7 @@
               <p class="product-item-price">CA$7.75</p>
               <button type="submit" class="btn-submit product-item-cart">Add to cart</button>
             </div>
-          </a>
+          </div>
         </div>
         
       </section>
@@ -240,50 +258,48 @@
 
 
 
-      <div class="checkout-wrapper">
-        <section class="checkout">
-          <h2>Checkout Cart</h2>
-          <div class="checkout-items">
-            <div class="checkout-item">
-              <span class="checkout-item-name">Cream Earl Grey Moonlight</span>
-              <span class="checkout-item-price">$20.00</span>
-              <input type="number" name="" id="" value="1" class="checkout-number">
-            </div>
-            <div class="checkout-item">
-              <span class="checkout-item-name">Cucumber Lemon Refresher</span>
-              <span class="checkout-item-price">$10.00</span>
-              <input type="number" name="" id="" value="3" class="checkout-number">
-            </div>
-            <div class="checkout-item">
-              <span class="checkout-item-name">Tencha Mimoto Japanese</span>
-              <span class="checkout-item-price">$12.30</span>
-              <input type="number" name="" id="" value="1" class="checkout-number">
-            </div>
-            <div class="checkout-item">
-              <span class="checkout-item-name">Green Vitality</span>
-              <span class="checkout-item-price">$8.00</span>
-              <input type="number" name="" id="" value="1" class="checkout-number">
-            </div>
+      <section>
+        <h2>Checkout Cart</h2>
+        <div class="checkout-items">
+          <div class="checkout-item">
+            <span class="checkout-item-name">Cream Earl Grey Moonlight</span>
+            <span class="checkout-item-price">$20.00</span>
+            <input type="number" name="moonlight-num" value="1" class="checkout-number">
           </div>
-          
-          <div class="checkout-total">
-            <h4>Summary</h4>
-            <div><span>Subtotal:</span><span>$58</span></div>  
-            <div><span>Shipping:</span><span>$12.99</span></div> 
-            <div><span>Tax:</span><span>$7.56</span></div>
-            <div class="total-row">
-              <h4>Total Cost:</h4>
-              <h4>CA$ 67.56</h4>
-            </div>
+          <div class="checkout-item">
+            <span class="checkout-item-name">Cucumber Lemon Refresher</span>
+            <span class="checkout-item-price">$10.00</span>
+            <input type="number" name="cucumber-num" value="3" class="checkout-number">
           </div>
-        </section>
+          <div class="checkout-item">
+            <span class="checkout-item-name">Tencha Mimoto Japanese</span>
+            <span class="checkout-item-price">$12.30</span>
+            <input type="number" name="tencha-num" value="1" class="checkout-number">
+          </div>
+          <div class="checkout-item">
+            <span class="checkout-item-name">Green Vitality</span>
+            <span class="checkout-item-price">$8.00</span>
+            <input type="number" name="green-num" value="1" class="checkout-number">
+          </div>
+        </div>
+        
+        <div class="checkout-total">
+          <h4>Summary</h4>
+          <div><span>Subtotal:</span><span>$58</span></div>  
+          <div><span>Shipping:</span><span>$12.99</span></div> 
+          <div><span>Tax:</span><span>$7.56</span></div>
+          <div class="total-row">
+            <h4>Total Cost:</h4>
+            <h4>CA$ 67.56</h4>
+          </div>
+        </div>
+      </section>
 
-    </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
+    </div>
 
-
-    <section id="">
-
+    <!-- fonts and color -->
+    <div class="font-and-color">
+      <!-- fonts -->
       <section>
         <h2>Fonts</h2>
           <h3>Font1: <span class="font-trirong">Trirong</span></h3>
@@ -300,8 +316,8 @@
           </ol>
           <br>
       </section>
-  
-      <section >
+      <!-- color pallete -->
+      <section>
         <h2>Colour palettes</h2>
         <div class="colors">
           <div class="color-block-1">
@@ -370,11 +386,7 @@
           </div>
         </div>
       </section>  
-      
-      <section></section>
-
-    </section>
-
-
+    </div>
+    
   </body>
 </html>
