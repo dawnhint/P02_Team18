@@ -24,7 +24,7 @@ section.first-section {
   margin-bottom: 3rem;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
   body {
     padding: 2rem 1rem;
   }
@@ -34,19 +34,20 @@ section.first-section {
 
 /* Citation Page */
 section.citation {
-  padding: 2rem 0 1rem 0;
+  padding: 2rem 1rem 1rem 1rem;
   border-bottom: 1px solid #A4BE89;
+}
+
+.citation h2 {
+  margin-bottom: 0;
+}
+
+.citation h4 {
+  padding-top: 0.5rem;
 }
   
 
 
-/* checkout page */
-/* .checkout-wrapper {
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem 1.5rem;
-} */
 
 .checkout-wrapper section {
   border: none;

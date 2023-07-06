@@ -4,9 +4,12 @@
  
 }
 
+.about-reverse {
+    flex-direction: row-reverse;
+}
+
 
 .about_img{
-    
     flex:1;
     padding: 5rem;
     

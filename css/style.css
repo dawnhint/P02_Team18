@@ -559,7 +559,7 @@ input.checkout-number {
 .checkout-total >div{
   display:flex;
   justify-content: space-between;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 .checkout-total span{
