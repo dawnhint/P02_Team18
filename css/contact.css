@@ -1,6 +1,6 @@
 .contact_page{
-    display:flex;
-   
+    display: flex;
+    flex-direction: row-reverse;
 }
 .img{
     padding:5rem;
@@ -24,14 +24,19 @@
 .feedback{
     background-color: #c1d9a7;
     padding: 5rem;
-    
+}
+
+
+.feedback label {
+    margin-top: 0.6rem;
+    margin-bottom: 0.3rem;
 }
 
 #feedback{
     height:20rem;
 }
 @media only screen and (max-width: 1500px){
-  
+
     .img{
         padding:2rem;
         flex:1;
@@ -55,33 +60,38 @@
         
     }
 }
+
 @media only screen and (max-width: 800px){
     .contact_page{
         flex-direction: column;
-       
     }
 }
+
 @media only screen and (max-width: 500px){
+
+    section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
     .img{
         padding:0.5rem;
-      
     }
     
     .contact{
         margin:auto;
         gap:2rem;
-        
         padding:0.5rem;
-        
+        padding-top: 1.5rem;
     }
     .information{
-        padding: 0.5rem;
+        padding: 1rem;
         padding-top: 0;
-        
+        padding-bottom: 1.5rem;
     }
+    
     .feedback{
         background-color: #c1d9a7;
-        padding: 0.5rem;
-        
+        padding: 1rem;
     }
 }
