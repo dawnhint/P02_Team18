@@ -63,7 +63,10 @@ header {
   padding-right: 2rem;
 }
 
-#nav-toggle.hidden, #nav-items.hidden {
+#nav-toggle.hidden, 
+#nav-items.hidden,
+#search-bar.hidden
+{
   visibility: hidden;
   display: none;
 }
@@ -113,15 +116,72 @@ header {
 .our_story>a{
   margin-top: 2rem;
 }
-/* change header's color */
+
+/* change header's color and height 
+/* set search bar */
 @media only screen and (max-width: 700px){
   .header-top{
     background-color:#c1d9a7;
+    height: 3rem;
   }
+
+  .link-logo {
+    font-size: 1.2rem;
+  }
+
+  .header-top .iconfont {
+    font-size: 1.5rem;
+  }
+  
   .header-nav {
     display:block;
   }
+}
 
+/* search bar */
+
+.search-bar {
+  display: block;
+  padding-top: 0.5rem;
+  background-color: #c1d9a7;
+  text-align: center;
+}
+
+.search-bar input {
+  width: 90%;
+  border-radius: 0.25rem;
+  text-align: center;
+  outline-style: none;
+  border: 1px solid #A4BE89;
+  height: 2rem;
+  padding: 1em;
+}
+
+.search-bar input:focus, 
+.search-bar input:hover {
+  background-color: #f5f5dc;
+  border: 1px solid #A4BE89;
+  color:#385A41;
+}
+
+/* set search bar */
+@media only screen and (max-width: 700px){
+  .search-bar {
+    padding-top: 0.1rem;
+    padding-bottom: 1rem;
+    background-color: #c1d9a7;
+    text-align: center;
+  }
+  .search-bar input {
+    width: 90%;
+    border-radius: 0.25rem;
+    text-align: center;
+    outline-style: none;
+    border: 1px solid #A4BE89;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+  
 }
 
 

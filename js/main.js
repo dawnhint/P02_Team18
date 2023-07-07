@@ -30,12 +30,25 @@ window.addEventListener("resize", ()=>{
 
 // show navigation when clicking the toggle
 navToggle.addEventListener("click", ()=> {
-    console.log("click once");
     if(navItems.classList.contains("hidden")) {
-        console.log("show items");
         navItems.classList.remove("hidden");
     } else {
-        console.log("hide items");
         navItems.classList.add("hidden");
     }
 })
+
+// search bar
+var searchIcon  = document.querySelector("#search-icon");
+var searchBar = document.querySelector("#search-bar");
+
+// show search bar 
+searchIcon.addEventListener("click", ()=> {
+    if(searchBar.classList.contains("hidden")) {
+        console.log("show search bar");
+        searchBar.classList.remove("hidden");
+    } else {
+        console.log("hide search bar");
+        searchBar.classList.add("hidden");
+    }
+})
+
