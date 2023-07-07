@@ -65,7 +65,7 @@
     box-shadow: 0.2em 0.3em #c1d9a7;
 }
 
-.btn-filter:active {
+.btn-filter:active{
     background-color: #567a61;
     color: white;
     box-shadow: 0.2em 0.3em #c1d9a7;
@@ -73,12 +73,22 @@
     transition: color 0s;
 }
 
+
+/* filter function */
+
 .btn-selected {
     background-color: #567a61;
     color: white;
-    /* font-weight:600; */
     transform: translateY(-0.1em);
     box-shadow: 0.2em 0.3em #c1d9a7;
+}
+
+.product-item {
+    display: none;
+}
+
+.show {
+    display: inline-block;
 }
 
 

@@ -26,7 +26,7 @@
           <a href="./index.html" class="font-trirong link-logo">Leafina</a>
         </div>
         <div class="header-icons">
-          <a href="#">
+          <a href="#" class="search-icon" id="search-icon">
             <i class="iconfont">&#xe6d1;</i>
           </a>
           <a href="./checkout.html">
@@ -34,9 +34,11 @@
               &#xe826;
             </i>
           </a>
-        </div>     
+        </div>  
       </div>
-      
+      <div class="search-bar hidden" id="search-bar">
+        <input type="search" name="search-for" id="search" placeholder="press return to search">
+      </div>   
       <div id="nav-items" class="header-nav hidden">
         <nav class="nav">
           <a href="./index.html" class="link-nav">Home</a>
@@ -46,19 +48,21 @@
         </nav>
       </div>   
     </header>
+
     
     <section class="products">
       <h1>Products</h1>
       <section class="filter-section">
         <h2>Filters</h2>
-        <div class="filter-list">
-          <button class="btn-filter">Black Tea</button>
-          <button class="btn-filter btn-selected">Green Tea</button>
-          <button class="btn-filter btn-selected">Herbal</button>
-          <button class="btn-filter">Pu-erh</button>
-          <button class="btn-filter">Canada</button>
-          <button class="btn-filter">Japan</button>
-          <button class="btn-filter">Sri Lanka</button>
+        <div class="filter-list" id="filter-list">
+          <button class="btn-filter" onclick="filterSelection('black')">Black Tea</button>
+          <button class="btn-filter" onclick="filterSelection('green')">Green Tea</button>
+          <button class="btn-filter" onclick="filterSelection('herbal')">Herbal</button>
+          <button class="btn-filter" onclick="filterSelection('pu-erh')">Pu-erh</button>
+          <button class="btn-filter" onclick="filterSelection('japan')">Japan</button>
+          <button class="btn-filter" onclick="filterSelection('canada')">Canada</button>
+          <button class="btn-filter" onclick="filterSelection('usa')">USA</button>
+          <button class="btn-filter" onclick="filterSelection('sri-lanka')">Sri Lanka</button>
         </div>
       </section>
       <h2 class="title-pick-your-tea">Pick Your Tea</h2>
@@ -83,7 +87,7 @@
             </div>
           </div>
           <!-- ginger-ginseng-chamomile -->
-          <div class="product-item">
+          <div class="product-item herbal usa">
             <a href="./pdp01.html" class="img-link-container">
               <img src="./img/products/ginger-ginseng-chamomile.png" alt="loose Ginger Ginseng Chamomile" class="img-link">
             </a>
@@ -100,7 +104,7 @@
             </div>
           </div>
           <!-- Cream Earl Grey Moonlight -->
-          <div class="product-item">
+          <div class="product-item black sri-lanka">
             <a href="./pdp02.html" class="img-link-container">
               <img src="./img/products/cream-earl-grey-moonlight.png" 
               alt="loose Cream Earl Grey Moonlight" 
@@ -122,7 +126,7 @@
             </div>
           </div>
           <!-- Guarana Energizer Chai -->
-          <div class="product-item">
+          <div class="product-item pu-erh canada">
             <a href="./pdp01.html" class="img-link-container">
               <img src="./img/products/product_guarana.png" alt="loose Guarana Energizer Chai" class="img-link">
             </a>
@@ -141,7 +145,7 @@
             </div>
           </div>
           <!-- Tencha Mimoto Japanese -->
-          <div class="product-item">
+          <div class="product-item green japan">
             <a href="./pdp02.html" class="img-link-container">
               <img src="./img/products/product_tencha.png" alt="loose Tencha Mimoto Japanese" class="img-link">
             </a>
@@ -160,7 +164,7 @@
             </div>
           </div>
           <!-- Tart Cherry Turmeric -->
-          <div class="product-item">
+          <div class="product-item green germany">
             <a href="./pdp01.html" class="img-link-container">
               <img src="./img/products/tart-cherry-turmeric.png" alt="loose Tart Cherry Turmeric" class="img-link">
             </a>
@@ -179,7 +183,7 @@
             </div>
           </div>
           <!-- Kukicha Kabuse -->
-          <div class="product-item" >
+          <div class="product-item green japan" >
             <a href="./pdp02.html" class="img-link-container">
               <img src="./img/products/kukicha.png" alt="loose Kukicha Kabuse" class="img-link">
             </a>
@@ -198,7 +202,7 @@
             </div>
           </div>
           <!-- Green Vitality tea -->
-          <div class="product-item">
+          <div class="product-item red-bush germany">
             <a href="./pdp01.html" class="img-link-container">
               <img src="./img/products/green-vitality.png" alt="Product image" class="img-link">
             </a>
@@ -240,6 +244,7 @@
     </footer>
 
     <script src="./js/main.js"></script>
+    <script src="./js/filter.js"></script>
 
   </body>
 </html>
