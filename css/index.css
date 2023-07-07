@@ -268,7 +268,7 @@ footer .link-logo:hover {
   .home_about{
     flex-direction: column;
     gap:1rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
   .about_img{
     
@@ -277,6 +277,10 @@ footer .link-logo:hover {
 
   .our_story>a{
     margin-top: 2rem;
+  }
+  .our_story {
+    text-align: center;
+    margin-bottom: 1.5rem;
   }
 }
 
