@@ -7,8 +7,6 @@
 // // Remove all saved data from sessionStorage
 // sessionStorage.clear();
 
-// 呃还要计算subtotal
-
 var productList = [
     {
         name:'Cucumber Lemon Refresher',
@@ -45,10 +43,12 @@ var productList = [
 ]
 
 
-console.log(sessionStorage);
-
 var itemsContainer = document.getElementById("checkout-items");
+var subtotalNum = 0;
 
+var emptyCart = true;
+
+// add items in shopping cart
 for(let i=0; i<productList.length; i++) {
     var productName = productList[i].name;
     var price = productList[i].price;
@@ -57,6 +57,8 @@ for(let i=0; i<productList.length; i++) {
     let data = sessionStorage.getItem(productName);
 
     if(data !== null) {
+        emptyCart = false;
+
         // create item line
         var item = document.createElement('div');
         item.className = 'checkout-item';
@@ -84,9 +86,42 @@ for(let i=0; i<productList.length; i++) {
         item.appendChild(itemNum);
 
         itemsContainer.appendChild(item);
+
+        // add subtotal
+        subtotalNum = subtotalNum + price*data;
+        subtotalNum = Math.round(subtotalNum*100)/100;
     }
 
 }
 
-// when pay now, clear the cart 
-// text: it's empty, shop something
+// change subtotal number
+var subtotal = document.getElementById("subtotal");
+subtotal.innerText = "$" + subtotalNum;
+
+// change tax number
+var taxNum = subtotalNum*0.05;
+taxNum = Math.round(taxNum*100)/100;
+var tax = document.getElementById("tax");
+tax.innerText = "$" + taxNum;
+
+// change total number
+var totalNum = subtotalNum + taxNum + 11.99;
+totalNum = Math.round(totalNum*100)/100;
+var total = document.getElementById("total");
+total.innerText = "CA$ " + totalNum;
+
+
+
+// When the cart is empty, show the text
+var empty = document.querySelector("#empty-hint");
+
+if(emptyCart) {
+    empty.classList.remove("hidden");
+}
+
+function clearCart() {
+    if(sessionStorage.length>0) {
+        alert("Your order has been placed.")
+    }
+    sessionStorage.clear();
+}

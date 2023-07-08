@@ -53,18 +53,21 @@ searchIcon.addEventListener("click", ()=> {
 })
 
 
-// shopping cart 
-// reference: https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
+// shopping cart function
 
 // Save data to sessionStorage
 
 function storeItem(productName) {
     let numOrigin = Number(sessionStorage.getItem(productName));
-    console.log(productName + " " + numOrigin +" + 1");
+    // console.log(productName + " " + numOrigin +" + 1");
     sessionStorage.setItem(productName, numOrigin+1);
-    console.log(sessionStorage);
 
-    // 加个cart动画
-    // orange一下
-    // 呃 animation怎么加来着
+    // add animation to chekout-icon
+    let checkout = document.getElementById('checkout-icon');
+    checkout.classList.add("checkout-animation");
+    setTimeout(() => removeAnm(checkout), 1000);
+}
+
+function removeAnm(checkout) {
+    checkout.classList.remove("checkout-animation");
 }

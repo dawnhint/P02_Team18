@@ -95,6 +95,30 @@ header {
   text-align: center;
 }
 
+/* add to cart animation */
+.checkout-animation {
+  animation-name: added;
+  animation-duration: 1s;
+  display: inline-block;
+  animation-iteration-count: 1;
+}
+@keyframes added {
+  0%   {
+    transform: scale(1);
+    color: #c58d24;
+  }
+  40% {
+    transform: scale(1.4);
+  }
+  90% {
+    color: #c58d24;
+  }
+  100% {
+    transform: scale(1);
+    color: #728c57;
+  }
+}
+
 /* main navigation wrapper */
 .header-nav {
   display: flex;

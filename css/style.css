@@ -86,8 +86,7 @@ a.link-nav:hover, a.link-nav:focus {
   font-weight: 600;
   
   transform: scale(1.1);
-  transition: background-color 0.3s ease-out;
-  transition: font-size 0.3s ease-out;
+  transition: transform 0.25s ease-out;
 }
 
 /* buttons */
@@ -184,8 +183,8 @@ input[type="text"]:focus, input[type="text"]:hover {
 }
 
 input[type="radio"]{
-  /* I think this is for canceling the style by chrome */
-  -webkit-appearance: none;
+  /* cancel the style by chrome */
+  appearance: none;
 }
 
 input[type="radio"]{

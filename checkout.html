@@ -8,6 +8,7 @@
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/checkout.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
@@ -52,29 +53,35 @@
       <section class="checkout">
         <h2>Checkout Cart</h2>
         <div class="checkout-items" id="checkout-items">
+          <!-- item example -->
           <!-- <div class="checkout-item">
             <span class="checkout-item-name">Cream Earl Grey Moonlight</span>
             <span class="checkout-item-price">$20.00</span>
             <input type="number" name="moonlight-num" value="1" class="checkout-number">
           </div> -->
+          <div class="hidden empty" id="empty-hint">
+            <p>Your cart is empty! 
+            </p>
+            <a href="./products.html" class="link-text">Begin your journey into the world of tea.</a>
+          </div>
         </div>
         
         <div class="checkout-total">
           <h4>Summary</h4>
           <div class="checkout-item">
             <span>Subtotal:</span>
-            <span>$58</span>
+            <span id="subtotal">$58</span>
           </div>  
           <div class="checkout-item">
             <span>Shipping:</span>
-            <span>$12.99</span>
+            <span>$11.99</span>
           </div> 
           <div class="checkout-item">
-            <span>Tax:</span>
-            <span>$7.56</span></div>
+            <span>Tax(5%):</span>
+            <span id="tax">$7.56</span></div>
           <div class="total-row">
             <h4>Total Cost:</h4>
-            <h4>CA$ 67.56</h4>
+            <h4 id="total">CA$ 67.56</h4>
           </div>
         </div>
       </section>
@@ -84,24 +91,21 @@
           <h2>Payment</h2>
           <form class="payment-form">
             <div class="payment-method">
-              <h4>Address</h4>
-          <label for="first_name">First Name</label>
-          <input type="text" id="first_name" >
-         
-          <label for="last_name">Last Name</label>
-          <input type="text" id="last_name" > 
-  
-          <label for="email">First Name</label>
-          <input type="text" id="email" >
-  
-          <label for="address">Address</label>
-          <input type="text" id="address" >
-  
-          <label for="city">City</label>
-          <input type="text" id="city" >
-  
-          <label for="post_code">Post Code</label>
-          <input type="text" id="post_code" > 
+            <!-- <h4>Address</h4>
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" >
+          
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" > 
+    
+            <label for="address">Address</label>
+            <input type="text" id="address" >
+    
+            <label for="city">City</label>
+            <input type="text" id="city" >
+    
+            <label for="post_code">Post Code</label>
+            <input type="text" id="post_code" >  -->
               <h4>Payment Method:</h4>
               <div class="radio-label">
                 <input type="radio" name="payment-method" id="method-card" checked>
@@ -122,7 +126,7 @@
               <div class="text-input-container">
                 <label for="cardholder">Cardholder Name:
                 </label>
-                <input type="text" id="cardholder" name="cardholder">
+                <input type="text" id="cardholder" name="cardholder" placeholder="First Name + Last Name">
               </div>
               <div class="text-input-container">
                 <label for="cardnumber">Card Number:
@@ -141,7 +145,7 @@
               </div> 
             </div>
     
-            <button type="submit" class="btn-submit payment-btn">Pay Now</button>
+            <button type="submit" class="btn-submit payment-btn" onclick="clearCart()">Pay Now</button>
           </form>
       </section>
     </div>
