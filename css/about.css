@@ -42,7 +42,7 @@
     }
     
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 850px){
     .about{
         flex-direction: column;
         gap:2rem;
@@ -51,6 +51,7 @@
         
         flex:1;
         padding: 0.5rem;
+        padding-bottom: 5rem;
         
     }
     .about_img img{
@@ -59,5 +60,6 @@
     .information{
         flex:1;
         padding: 0.5rem;
+        
     }
 }

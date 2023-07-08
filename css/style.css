@@ -84,7 +84,8 @@ a.link-nav:hover, a.link-nav:focus {
   border: solid 1px #8cc84c;
   color:#6aa62a;
   font-weight: 600;
-  font-size: 1.3rem;
+  
+  transform: scale(1.1);
   transition: background-color 0.3s ease-out;
   transition: font-size 0.3s ease-out;
 }
