@@ -52,3 +52,19 @@ searchIcon.addEventListener("click", ()=> {
     }
 })
 
+
+// shopping cart 
+// reference: https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
+
+// Save data to sessionStorage
+
+function storeItem(productName) {
+    let numOrigin = Number(sessionStorage.getItem(productName));
+    console.log(productName + " " + numOrigin +" + 1");
+    sessionStorage.setItem(productName, numOrigin+1);
+    console.log(sessionStorage);
+
+    // 加个cart动画
+    // orange一下
+    // 呃 animation怎么加来着
+}
